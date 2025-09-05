@@ -45,6 +45,24 @@ def select_file():
         return None
 
 
+def validate_data(file_data):
+
+    if file_data.empty:
+        print("В файле нет данных")
+        return None, None
+
+    for col in file_data.columns:
+        if col == 'region':
+            continue
+
+        for index, value in enumerate(file_data[col]):
+            try:
+                pd.to_numeric([value])
+            except (ValueError, TypeError):
+                print(f"Ошибка: Некорректные данные в колонке '{col}', строка {index + 2}: '{value}'")
+                exit(1)
+
+
 def load_file():
     file_name = select_file()
     if not file_name:
@@ -58,30 +76,9 @@ def load_file():
     try:
         file_data = pd.read_csv(file_name)
 
-        for years in file_data.get('year'):
-            if type(years) != int:
-                print("Некорректные данные")
-                exit(1)
+        validate_data(file_data)
 
-        if file_data.empty:
-            print("В файле нет данных")
-            return None, None
-
-        for col in file_data.columns:
-
-            if col == 'region':
-                continue
-
-            try:
-                converted = pd.to_numeric(file_data[col])
-                if converted.isna().any():
-                    print("Ошибка некорректные данные в таблице")
-                    exit(1)
-
-            except ValueError:
-                continue
-
-        print(f"\nФайл '{file_name}'успешно  загружен ")
+        print(f"\nФайл '{file_name}' успешно загружен ")
         print(f"Строк: {len(file_data)}, Колонок: {len(file_data.columns)}")
         print("Колонки:", list(file_data.columns))
 
