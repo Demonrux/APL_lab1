@@ -20,6 +20,10 @@ csv
 - year,region,npg,birth_rate,death_rate,gdw,urbanization
 - 1990,Amur Oblast,1.9,14.2,12.3,84.66,52.42
 - 1990,Altai Krai,1.8,12.9,11.1,80.24,58.07
+- year	region	npg	birth_rate	death_rate	gdw	urbanization
+1990	Amur Oblast	01.сен	14.фев	12.мар	84.66	52.42
+<img width="561" height="97" alt="image" src="https://github.com/user-attachments/assets/62d536cd-6a7c-4b87-89ac-134ccb3f89b3" />
+
 
 🔍 Функциональность
 Основные команды:
