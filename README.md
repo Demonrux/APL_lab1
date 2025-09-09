@@ -17,12 +17,11 @@ Python 3.6+
 Программа работает с CSV файлами, содержащими числовые данные. Пример формата:
 
 csv
-- year,region,npg,birth_rate,death_rate,gdw,urbanization
-- 1990,Amur Oblast,1.9,14.2,12.3,84.66,52.42
-- 1990,Altai Krai,1.8,12.9,11.1,80.24,58.07
-- year	region	npg	birth_rate	death_rate	gdw	urbanization
-1990	Amur Oblast	01.сен	14.фев	12.мар	84.66	52.42
-<img width="561" height="97" alt="image" src="https://github.com/user-attachments/assets/62d536cd-6a7c-4b87-89ac-134ccb3f89b3" />
+year	region	npg	birth_rate	death_rate	gdw	urbanization
+1990	Amur Oblast	1,90	14,20	12,30	84.66	52.42
+1990	Altai Krai	1,80	12,90	11,10	80.24	58.07
+1990	Amur Oblast	7,60	16,20	8,60	69.55	68.37
+<img width="618" height="97" alt="image" src="https://github.com/user-attachments/assets/f4ee6758-d11e-40ba-8fc1-ea8736bbda61" />
 
 
 🔍 Функциональность
