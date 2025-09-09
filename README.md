@@ -17,6 +17,7 @@ Python 3.6+
 Программа работает с CSV файлами, содержащими числовые данные. Пример формата:
 
 csv
+
 <img width="618" height="97" alt="image" src="https://github.com/user-attachments/assets/f4ee6758-d11e-40ba-8fc1-ea8736bbda61" />
 
 
