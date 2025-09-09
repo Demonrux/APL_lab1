@@ -17,10 +17,6 @@ Python 3.6+
 Программа работает с CSV файлами, содержащими числовые данные. Пример формата:
 
 csv
-year	region	npg	birth_rate	death_rate	gdw	urbanization
-1990	Amur Oblast	1,90	14,20	12,30	84.66	52.42
-1990	Altai Krai	1,80	12,90	11,10	80.24	58.07
-1990	Amur Oblast	7,60	16,20	8,60	69.55	68.37
 <img width="618" height="97" alt="image" src="https://github.com/user-attachments/assets/f4ee6758-d11e-40ba-8fc1-ea8736bbda61" />
 
 
